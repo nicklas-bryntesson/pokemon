@@ -1,0 +1,25 @@
+/*
+Theme Name: Pokemon
+Theme URI: https://github.com/nicklas-bryntesson/pokemon
+Author: Nicklas Bryntesson
+Author URI: https://nicklasbryntesson.se/
+Description: Random Pokemon card gerator with Wordpress, graphQL, ACF & Gatsby.
+Requires at least: 5.3
+Tested up to: 5.6
+Requires PHP: 5.6
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pokemon
+Tags: Pokemon, Gatsby, Advanced Custom Fields, graphQL
+
+Pokemon is distributed under the terms of the GNU GPL.
+*/
+
+body {
+    background-color: pink;
+}
+
+h1 {
+    color: green;
+}

@@ -15,7 +15,7 @@ License: GPLv2
 // Register Custom Post Type
 function custom_post_type() {
 
-    $icon_url = 
+    $icon_url = plugin_dir_url(__FILE__) . 'images/pikachu-pokemon.png';
 
 	$labels = array(
 		'name'                  => _x( 'Pokemons', 'Post Type General Name', 'text_domain' ),
@@ -57,7 +57,7 @@ function custom_post_type() {
 		'show_ui'               => true,
 		'show_in_menu'          => true,
 		'menu_position'         => 5,
-		'menu_icon'             => 'https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg',
+		'menu_icon'             => $icon_url,
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,

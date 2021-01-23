@@ -9,6 +9,11 @@
  * @since 1.0.0
  */
 
+if ( ! defined( '_S_VERSION' ) ) {
+	// Replace the version number of the theme on each release.
+	define( '_S_VERSION', '1.0.0' );
+}
+
 if ( ! function_exists( 'pokemon_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -93,7 +98,6 @@ function pokemon_scripts() {
 		array(), 
 		wp_get_theme()->get( 'Version' ) 
 	);
-
 
 	wp_enqueue_script(
 		'pokemon-navigation-script',

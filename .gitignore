@@ -2,6 +2,7 @@
 
 !README.md
 !.gitignore
+!workspace.code-workspace
 
 !wp-content
 wp-content/*

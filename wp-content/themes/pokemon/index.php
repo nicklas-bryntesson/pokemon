@@ -49,7 +49,7 @@ get_header();
                             <?php 
                             $image = get_field( 'avatar' );
                             if( !empty( $image ) ) { ?>
-                                <figure>
+                                <figure class="pokemonAvatar">
                                     <img src="<?php echo $image['url'] ?>" alt="<?php the_title(); ?>, pokemon number <?php the_field( 'number' ); ?>">
                                 </figure>
                             <?php } else {

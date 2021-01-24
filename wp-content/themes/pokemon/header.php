@@ -24,3 +24,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<div id="page" class="site">
+		<header class="site-header">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
+			<h2>Site Header</h2>
+		</header>
+		

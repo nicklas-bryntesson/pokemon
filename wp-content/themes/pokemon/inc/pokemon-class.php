@@ -50,7 +50,7 @@ function custom_post_type() {
 		'label'                 => __( 'Pokemon', 'text_domain' ),
 		'description'           => __( 'Pokemon Generator', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields', 'page-attributes' ),
+		'supports'              => array( 'title', 'revisions', 'custom-fields', 'page-attributes' ),
 		'taxonomies'            => array( 'weakness', ' type' ),
 		'hierarchical'          => true,
 		'public'                => true,

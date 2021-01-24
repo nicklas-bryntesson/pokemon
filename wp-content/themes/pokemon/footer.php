@@ -13,6 +13,11 @@
 
 ?>
 
+        <footer class="site-footer">
+            <h2>Site Footer</h2>
+        </footer>
+
+    </div><!-- #page .site -->
 <?php wp_footer(); ?>
 
 </body>

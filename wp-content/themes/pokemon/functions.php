@@ -9,11 +9,6 @@
  * @since 1.0.0
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
-	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
-}
-
 if ( ! function_exists( 'pokemon_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -44,22 +39,10 @@ if ( ! function_exists( 'pokemon_setup' ) ) {
 			array(
 				'link',
 				'aside',
-				'gallery',
 				'image',
-				'quote',
 				'status',
-				'video',
-				'audio',
-				'chat',
 			)
 		);
-
-		/**
-		 * Enable support for Post Thumbnails on posts and pages.
-		 *
-		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-		 */
-		add_theme_support( 'post-thumbnails' );
 
 		/**
 		 * Switch default core markup for search form, comment form, and comments
@@ -68,8 +51,6 @@ if ( ! function_exists( 'pokemon_setup' ) ) {
 		add_theme_support(
 			'html5',
 			array(
-				'gallery',
-				'caption',
 				'style',
 				'script',
 				'navigation-widgets',
@@ -103,15 +84,11 @@ function pokemon_scripts() {
 		wp_get_theme()->get( 'Version' ),
 		true
 	);
-	
 }
 add_action( 'wp_enqueue_scripts', 'pokemon_scripts' );
-
 
 // Enhance the theme by hooking into WordPress.
 require get_template_directory() . '/inc/pokemon-class.php';
 
-
 // Enhance the theme by hooking into WordPress.
 require get_template_directory() . '/inc/template-functions.php';
-

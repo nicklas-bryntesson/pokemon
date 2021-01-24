@@ -80,9 +80,6 @@ if ( ! function_exists( 'pokemon_setup' ) ) {
 }
 add_action( 'after_setup_theme', 'pokemon_setup' );
 
-
-
-
 /**
  * Enqueue scripts and styles.
  *
@@ -111,10 +108,10 @@ function pokemon_scripts() {
 add_action( 'wp_enqueue_scripts', 'pokemon_scripts' );
 
 
+// Enhance the theme by hooking into WordPress.
+require get_template_directory() . '/inc/pokemon-class.php';
 
 
 // Enhance the theme by hooking into WordPress.
 require get_template_directory() . '/inc/template-functions.php';
-
-
 

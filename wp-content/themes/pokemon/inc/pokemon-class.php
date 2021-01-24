@@ -15,7 +15,7 @@ License: GPLv2
 // Register Custom Post Type
 function custom_post_type() {
 
-    $icon_url = plugin_dir_url(__FILE__) . 'images/pokemon-icon.svg';
+    $icon_url = get_stylesheet_directory_uri() . '/assets/images/pokemon-icon.svg';
 
 	$labels = array(
 		'name'                  => _x( 'Pokemons', 'Post Type General Name', 'text_domain' ),

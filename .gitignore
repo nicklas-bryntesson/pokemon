@@ -5,11 +5,6 @@
 
 !wp-content
 wp-content/*
-
-!wp-content/plugins
-wp-content/plugins/*
-!wp-content/plugins/pokemon
-
 !wp-content/themes
 wp-content/themes/*
 !wp-content/themes/pokemon
